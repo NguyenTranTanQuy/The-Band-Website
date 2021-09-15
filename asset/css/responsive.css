@@ -1,8 +1,17 @@
 @media (max-width: 740px) {
+  #nav {
+    display: block;
+  }
   #nav > li,
   #header .search-menu-button {
     display: block;
   }
+  .search-menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   #slider .text-contest,
   #header .search-btn {
     display: none;
