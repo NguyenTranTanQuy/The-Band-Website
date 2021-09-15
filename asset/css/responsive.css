@@ -1,7 +1,4 @@
 @media (max-width: 740px) {
-  #nav {
-    display: block;
-  }
   #nav > li,
   #header .search-menu-button {
     display: block;
