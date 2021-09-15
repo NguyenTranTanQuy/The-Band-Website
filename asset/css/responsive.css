@@ -6,7 +6,7 @@
   #header .search-menu-button {
     display: block;
   }
-  #nav > li:first-child {
+  #nav li:first-child {
     display: inline-block;
   }
   .search-menu-button {
