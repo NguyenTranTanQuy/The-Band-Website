@@ -1,0 +1,37 @@
+@media (max-width: 740px) {
+  #nav > li,
+  #header .search-menu-button {
+    display: block;
+  }
+  #slider .text-contest,
+  #header .search-btn {
+    display: none;
+  }
+  .hide {
+    overflow: hidden;
+  }
+  /* Begin: Band Mobile Image */
+  .col_full_mobile {
+    width: 100%;
+  }
+  #content .team {
+    margin-top: 20px;
+  }
+
+  #content .member-img {
+    width: 60%;
+    height: auto;
+  }
+  #content .member_name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .tour_section .tour_information {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .contact_infor {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

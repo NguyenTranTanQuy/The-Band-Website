@@ -1,0 +1,428 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+}
+
+.button {
+  font-size: 15px;
+  padding: 10px 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.marbot8px {
+  margin-bottom: 8px;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col_half {
+  width: 50%;
+}
+
+.col_full {
+  width: 100%;
+}
+
+.col_thirt {
+  width: calc(100% / 3);
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  background-color: #000;
+  z-index: 1;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav .nav-arrow-down {
+  font-size: 14px;
+}
+
+.flri {
+  float: right;
+}
+
+#header .search-btn:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+#header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
+  padding: 0 21px;
+}
+
+#nav,
+.subnav {
+  list-style-type: none;
+}
+
+#nav > li {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+}
+.button:hover,
+.modal_button_pay:hover,
+.modal_close:hover,
+.tour_section .buy_ticket:hover,
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+  background-color: #ccc;
+  color: #000;
+}
+#nav .subnav {
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  top: 100%;
+  left: 0;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav .subnav a {
+  color: #000;
+  padding: 0 12px;
+  line-height: 38px;
+}
+
+#slider {
+  margin-top: 46px;
+  position: relative;
+  background: url("/w3-band/asset/font/image/slider/img_la.jpeg") top center /
+    cover no-repeat;
+  padding-top: 50%;
+}
+#slider .text-contest {
+  position: absolute;
+  color: #fff;
+  bottom: 48px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#slider .text-heading {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+#slider .text-decripsion {
+  font-size: 15px;
+}
+
+#content .content_section {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 64px 0;
+}
+
+#content .content_heading {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+#content .content_subheading {
+  font-size: 15px;
+  margin-top: 25px;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+#content .text_decription {
+  font-size: 15px;
+  margin-top: 25px;
+  line-height: 22.5px;
+  text-align: justify;
+}
+
+#content .team {
+  margin-top: 48px;
+}
+
+#content .member_name {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+#content .member-img {
+  width: 154px;
+  height: 154px;
+  border-radius: 4px;
+}
+
+#content .tour_section {
+  background-color: #000;
+  height: 793px;
+}
+
+#content .content_tour {
+  color: #fff;
+}
+
+#content .month_tour {
+  color: #000;
+  margin-top: 40px;
+  list-style-type: none;
+  background-color: #fff;
+  text-align: left;
+}
+
+.month_tour li {
+  font-size: 15px;
+  color: #757575;
+  padding: 12px 16px;
+  border-top: 1px;
+  border-bottom: 1px solid #ccc;
+}
+
+.month_tour .sold_out {
+  color: #fff;
+  background-color: #f44336;
+  padding: 2px 8px;
+  margin: 0 16px;
+}
+
+.month_tour .quantity {
+  background-color: #000;
+  color: #fff;
+  float: right;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+
+.tour_section .tour_world {
+  margin: 35px -8px 0;
+  display: inline-block;
+}
+
+.tour_section .tour_information {
+  width: calc(100% / 3);
+  float: left;
+}
+
+.tour_section .infor {
+  background-color: #fff;
+  margin: 0 8px;
+  text-align: left;
+  padding: 0.15px 16px;
+}
+
+.tour_section .infor_img:hover {
+  opacity: 0.6;
+}
+
+.tour_section .infor_img {
+  width: 100%;
+  padding: 0 8px;
+  display: block;
+}
+.tour_section .buy_ticket,
+.tour_section .tour_date,
+.tour_section .tour_name {
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  display: none;
+}
+.modal_container {
+  position: relative;
+  background-color: #fff;
+  width: 900px;
+  min-height: 200px;
+  animation: modalFadein ease 0.7s;
+}
+.modal_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal_header_icon {
+  margin: 15px;
+}
+
+header.modal_header {
+  background-color: #009688;
+  display: flex;
+  height: 130px;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+  padding: 32px 16px;
+}
+.modal.open {
+  display: flex;
+}
+
+.modal_content {
+  padding: 16px;
+}
+
+label.modal_label {
+  display: block;
+  font-size: 15px;
+}
+
+.modal_input {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.modal_button_pay {
+  width: 100%;
+  padding: 16px;
+  color: #fff;
+  background-color: #009688;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  margin: 0 0 15px;
+  cursor: pointer;
+}
+
+.modal_help {
+  float: right;
+  margin: 15px 0 20px;
+}
+
+#nav_contact {
+  height: 400px;
+}
+
+.contact {
+  margin-top: 48px;
+}
+
+.contact_infor {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+.contact_infor p {
+  font-size: 18px;
+  line-height: 27px;
+}
+.contact_infor i[class*="ti-"] {
+  display: inline-block;
+  width: 30px;
+}
+
+.contact_infor .form-control {
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+#map {
+  width: 100%;
+  filter: grayscale(50%);
+}
+
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+
+#footer .social_list a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .social_list a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copy_right {
+  margin: 15px 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copy_right a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes modalFadein {
+  from {
+    opacity: 0;
+    transform: translateY(-170px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
