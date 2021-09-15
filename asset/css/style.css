@@ -150,8 +150,8 @@ html {
 #slider {
   margin-top: 46px;
   position: relative;
-  background: url("/asset/font/image/slider/slider.jpeg") top center / cover
-    no-repeat;
+  background: url("https://www.w3schools.com/w3images/la.jpg") top center /
+    cover no-repeat;
   padding-top: 50%;
 }
 #slider .text-contest {
